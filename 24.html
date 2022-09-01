@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    var ge = 0; //个位
+    var shi = 0; //十位
+    var bai = 0; //百位
+    var qian = 0; //千位
+
+    for (var i = 1000; i <= 9999; i++) {
+      ge = i % 10;
+      shi = parseInt(i / 10) % 10;
+      bai = parseInt(i / 100) % 10;
+      qian = parseInt(i / 1000);
+
+      if (Math.pow(ge, 4) + Math.pow(shi, 4) + Math.pow(bai, 4) + Math.pow(qian, 4) == i) {
+        console.log(i);
+      }
+    }
+  </script>
+</body>
+
+</html>

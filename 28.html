@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+// 苹果3元一个，鸭梨2元一个，桃子1元一个。
+// 现在想用200元正好买100个水果，在控制台中列出所有可能性。
+for (var apple = 0; apple <= 100; apple++) {
+  for (var pear = 0; pear <= 100; pear++) {
+    for (var peach = 0; peach <= 10; peach++) {
+      if (3 * apple + 2 * pear + 1 * peach = 200 && apple + pear + peach = 100) {
+        console.log('苹果的个数' + apple, '梨的个数' + pear, ‘桃的个数’ + peach);
+      }
+    }
+  }
+}
+
+</script>
+
+</body>
+</html>

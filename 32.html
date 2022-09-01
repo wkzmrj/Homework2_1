@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+   // 开发一款软件，根据公式（身高-108）*2=体重，
+   // 可以有10斤左右的浮动。判断测试者体重为标准体重还是超重还是偏瘦
+   var height = prompt('请输入您的身高（厘米）')；
+   var weight = prompt('请输入您的体重（斤）')；
+   var n = (height - 108) * 2 ;
+   if (n >= weight - 10 && n <= weight +10 ) {
+     alert('您的身高体重为标准水平')；
+   } else {
+     alert('您需要注意饮食健康啦')
+   }
+  </script>
+</body>
+
+</html>
